@@ -1,0 +1,333 @@
+/*Aqui iremos resetar a página inteira!--------------------------------------------------------------------------------------*/
+body{
+    margin:0;
+    padding-top: 0;
+}
+/*CSS relacionado ao Header lateral------------------------------------------------------------------------------------------*/
+header{
+    width:23%;
+    height:100%;
+    position:fixed;
+    background-image: url(/images/header-texture.jpg);
+    background-size:100vh 100vw;
+    background-repeat: no-repeat;
+}
+.color1
+{
+    background-color:hsl(0deg,0%,12%);
+}
+
+h1, p, li
+{
+    color: white;
+}
+header p, li
+{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+header p:first-of-type
+{
+    position:absolute;
+    font-style: italic;
+    text-align: right;
+    display: block;
+    width:80%;
+    top:51%;
+    right:5%;
+    font-size: 1.25em;
+}
+header p:nth-last-child(1)
+{
+    position:absolute;
+    font-style: italic;
+    font-size:0.90em;
+    top:95%;
+    right:5%;
+}
+
+.logo
+{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    text-align: right;
+    line-height: 0.9em;
+    font-size: 3.5em;
+    position:absolute;
+    right:5%;
+    top:35%;
+}
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+i{
+    display: inline-block;
+    margin-left:0.50em;
+    color:white;
+    font-size: 2em;
+    transition: 0.2s;
+}
+i:hover{
+    color:hsl(163deg,100%,60%);
+    font-size:2.5em;
+    transition: 0.2s;
+    transform:translate(0,-10%);
+}
+
+.icons-header{
+    position:absolute;
+    top:90%;
+    right:5%;
+    margin-top:2em;
+    transform:translate(0,-50%);
+}
+/*CSS relacionado ao Main da página--------------------------------------------------------------------------------------------*/
+h2
+{
+    color:hsl(0deg,0%,30%);
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 1.1em;
+}
+main
+{
+    width:77%;
+    margin-left:23%;
+}
+.sub-header
+{
+    width:100%;
+    height:17em;
+    background-image:url(/images/sub-header-image.jpg);
+    background-size: 110%;
+    background-position: bottom right;
+    position: relative;
+}
+nav
+{
+    width: 100%;
+    height: 4em;
+    background-color: hsl(0deg,0%,30%);
+    position:absolute;
+    bottom:0; 
+}
+nav div{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+ul
+{  
+    padding:0;
+    margin:0;
+    text-align:right;
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+li
+{
+    display:inline-block;
+    font-size:1.5em;
+    font-style: italic;
+    height:100%;
+}
+li a{
+    color:white;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition:0.2s;
+    padding:0.7em 0.6em 0;
+    box-sizing: border-box;
+}
+li a:hover {
+    color:hsl(163deg,100%,60%);
+    transition:0.2s;
+    background-color: hsl(0deg,0%,25%);
+}
+.black-letter{
+    color:hsl(0deg,0%,30%);
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    width:100%;
+    margin:1.5em 0 2em 0;
+    text-align: center;
+    font-size: 3em;
+
+    font-weight: 900;
+}
+article:nth-of-type(1){
+    width:100%;
+    height:600px;
+}
+article:nth-of-type(2){
+    width:100%;
+    height:600px;
+    margin-top:2em;
+}
+article section:nth-child(1)
+{
+    width:35%;
+    height:100%;
+    margin-left:6%;
+    margin-right: 3%;
+    float:left;
+}
+article section p
+{
+    display: inline-block;
+    margin:0;    
+}
+article section h2
+{
+    display: inline-block;
+    margin:1em 0 0.4em 0;    
+}
+.picture-show{
+    width:25%;
+    float:right;
+    margin-right:2.5%;
+    position:relative;
+}img{
+    width: 100%;
+    border-radius: 15px;
+    position:relative;
+    transition: 0.1s;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.img:hover img{
+    filter:brightness(70%);
+    transition: 0.2s;
+}
+.img:hover .title
+{
+    color:white;
+    transition: 0.2s;
+}
+.img:hover .description
+{
+    color:white;
+    transition: 0.2s;
+}
+
+.img{
+    position:relative;
+}
+.img a .title{
+    position:absolute;
+    display: inline-block;
+    width:70%;
+    margin:0 0 0 50%;
+    text-align: center;
+    color:transparent;
+    transition: 0.2s;
+    z-index: 1;
+    transform:translate(-50%, 0);
+    top:75%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size:1.2em;   
+}
+.description
+{
+    position:absolute;
+    display: inline-block;
+    width:80%;
+    margin:0 0 0 50%;
+    text-align: center;
+    color:transparent;
+    transition: 0.2s;
+    z-index: 1;
+    transform:translate(-50%, 0);
+    top:83%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size:0.8em;
+}
+a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+article{
+    display: inline-block;
+}
+.button{
+    width:100%;
+    height:60px;
+    background-color: hsl(0deg,0%,30%);
+    border-radius: 15px;
+    margin-top: 1.5em;
+    
+}
+.button p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size:1.2em;
+    display: inline-block;
+    text-align: center;
+    width:100%;
+    
+}
+section p{
+    font-size:1.5em;
+    font-family: 'Montserrat', sans-serif;
+    color:hsl(0deg,0%,30%);
+}
+.contact-call
+{
+    margin-top:6em;
+    margin-bottom:2em;
+}
+/*CSS relacionado ao Footer da página---------------------------------------------------------------------------------------*/
+footer
+{
+    width:77%;
+    height:15em;
+    margin-left:23%;
+    background-color: hsl(0deg,0%,30%);
+    clear: both;
+}
+.contact
+{
+    float: left;
+    width:27.33%;
+    margin-left:3%;
+    margin-right: 3%;
+    margin-top:4em;
+    height: 45%;
+}
+.contact i{
+    font-size: 3em;
+    text-align: center;
+    width:100%;
+    margin:0 0 0 0;
+}
+footer div p{
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display:inline-block;
+    width:100%;
+    margin:0.5em 0 0 0;
+}
+h3
+{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0deg,0%,30%);
+    font-weight: 700;
+    text-align:center;
+    display: inline-block;
+    width:77%;
+    margin:0 0 0.8em 23%;
+    font-size: 2.5em;
+}
