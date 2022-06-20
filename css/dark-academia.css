@@ -8,7 +8,7 @@ header{
     width:23%;
     height:100%;
     position:fixed;
-    background-image: url(images/header-texture.jpg);
+    background-image:url(images/header-texture.jpg);
     background-size:100vh 100vw;
     background-repeat: no-repeat;
 }
